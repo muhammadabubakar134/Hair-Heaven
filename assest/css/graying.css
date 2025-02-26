@@ -1,0 +1,57 @@
+
+.container1 h1{
+    position: fixed;
+    top: 46%;
+    z-index: 1;
+}
+.container1
+{   height: 80vh;
+    width: 100%;
+    background-image: url(../img/graying.jpg);
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+.container1 h1 
+{
+    color: white;
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px black;
+    position: fixed;  
+    top: 46%;         
+    z-index: 1;
+    transition: top 0.3s ease;  
+}
+.container2
+{   
+   background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 150px;
+}
+.col-12
+{
+    position: relative;
+    overflow: hidden;
+    border: 5px solid transparent; 
+    transition: border-color 0.3s ease; 
+} 
+.col-12:hover
+ {border-color: pink;
+
+}
+#footer{
+    background-color: rgb(221, 221, 221);
+   }
+   #footer a{
+    text-decoration: none;
+   }
+   #footerlogo{
+    height: 12vh;
+    width: 35vh;
+   }

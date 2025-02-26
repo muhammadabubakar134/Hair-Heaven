@@ -1,0 +1,147 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container2{
+   background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 150px;
+}
+
+.card
+{
+    background-color: rgba(237, 239, 237, 0.995);
+    box-shadow: 0 4px 8px rgba(21, 21, 21, 0.974);
+    margin-top:20px;
+    margin-bottom:20px;
+    height:400px;
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border:none;
+    border-radius: 20px;
+
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img
+{   box-shadow: 0 4px 8px rgba(46, 46, 46, 0.591);
+    border-radius: 10px;
+    padding: 5px;
+    height: 250px;
+    width: 75%;
+
+}
+.card img:hover{
+    transform: scale(1.05);
+}
+.btn{
+    box-shadow: 0 4px 8px rgba(21, 21, 21, 0.974);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.982);
+    color: rgb(255, 255, 255);
+    text-size-adjust: 8px;
+    padding:5px;
+    width:100px;
+    height:35px;
+    text-decoration: none;
+  
+}
+.btn:hover {
+    transform: scale(1.05);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.897);
+}
+.accordion{
+    
+    box-shadow: 0 10px 10px 10px rgba(171, 170, 170, 0.974);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  
+}
+
+.main
+{ 
+padding:5px;
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.product-container {
+    display: flex;
+    padding-top: 200px;
+}
+
+.product-image {
+    width: 35%;
+    height: 60vh;
+    margin-right: 20px;
+}
+
+.product-details {
+    max-width: 500px;
+    margin-left: 200px;
+}
+
+.price {
+    font-size: 20px;
+    color: #c00;
+}
+
+.original-price {
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.discount {
+    color: green;
+}
+
+button {
+    background-color: #b22222;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #a10505;
+}
+
+
+#footer{
+    background-color: rgb(221, 221, 221);
+   }
+   #footer a{
+    text-decoration: none;
+   }
+   #footerlogo{
+    height: 12vh;
+    width: 35vh;
+   }
+   .p-description{
+   margin-left: 5%;
+   margin-right: 5%;
+   }

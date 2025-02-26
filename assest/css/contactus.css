@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 10%;
+}
+
+
+#form-container {
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+#map-container {
+    width: 55%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d62839;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    background-color: #ccc; /* Placeholder for actual map */
+}
+#footer{
+    background-color: rgb(221, 221, 221);
+   }
+   #footer a{
+    text-decoration: none;
+   }
+   #footerlogo{
+    height: 12vh;
+    width: 35vh;
+   }

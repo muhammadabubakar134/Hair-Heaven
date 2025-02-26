@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dryer Details</title>
+    <link rel="stylesheet" href="assest/css/bootstrap.css">
+    <script src="assest/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assest/css/style.css">
+    <script src="assest/js/dryers.js"></script>
+    <link rel="stylesheet" href="assest/css/dryer.css">
+    <link rel="icon" href="assest/img/icon.png">
+    
+</head>
+<body>
+    <nav></nav>
+    <div class="main gap-4 d-block ">
+        <script>
+            // var getid = new URLSearchParams(window.location.search).get("id")
+            var urlparms = new URLSearchParams(window.location.search)
+            var getid = urlparms.get('id')
+            // var card  = cards.find(c => c.id == getid )
+            var card  = cards.find( function(c)
+            {return c.id == getid} )
+            if(card){
+                document.write(`
+                <div class="product-container">
+        <img src="${card.img}" alt="Remington S1450 Hair Straightener" class="product-image">
+        <div class="product-details">
+            <h1>${card.title}</h1>
+            <span class="rating">★★★★☆ 19 reviews</span>
+            <p class="price">${card.price} <span class="original-price">Rs.9,800.00</span></p>
+            <p class="discount">SAVE 18%</p>
+            <label for="quantity"  >Quantity:</label>
+            <input type="number" id="quantity" class="d-block" value="1" min="1">
+            <br>
+            <br>
+
+            <button id="add-to-cart">Add to Cart</button>
+        </div>
+    </div> 
+                `)
+            }
+            else
+            {
+                document.write("<h1> Card Not Found !   </h1>")
+            }
+        </script>
+       <div class="p-description">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Product description</h3>
+                <p>Product description
+                    Shipping & Return
+                    Use & Care Manual
+                    Thereâ€™s no need to compromise on beautiful hair with our On The Go Travel Dryer. Its two different heat settings and the 1400W power offers quick results and a choice of blow-dry styles. Its compact design means you donâ€™t need to choose between that extra pair of shoes and great hair when you have minimal luggage space.                        
+                    Â FEATURES:                       
+                    Compact design without compromising on performance
+                    Worldwide Voltage
+                    1400w travel dryer
+                    Folding handle for easier storage
+                    2 heat and power settings for perfect blow-dries
+                    Concentrator nozzle for precision styling
+                    Hang up loop and 1.8m cord
+                    1 Year Warranty</p>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <h4>Shipping & Return</h4>
+                <p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.
+                    We want you to be 100% satisfied with your purchase. Items can be exchanged within 7 days of delivery.</p>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <h4>Use & Care Manual</h4>
+                <p>Click on the Button Below to download the User Manual:</p>              
+                 <a class="pdf" href="hair haven book.docx">Download PDF</a>       
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="footer"></div>
+ </body>
+</html>
+<script src="assest/js/script.js"></script>

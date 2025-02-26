@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair oil</title>
+    <link rel="stylesheet" href="assest/css/bootstrap.css">
+    <script src="assest/js/bootstrap.js "></script>
+    <link rel="stylesheet" href="assest/css/hairoil.css">
+    <script src="assest/js/hairoil.js"></script>
+    <link rel="stylesheet" href="assest/css/style.css">
+    <link rel="icon" href="assest/img/icon.png">
+</head>
+<body>
+  <!---navbar start -->
+  <nav></nav>
+      <!----navbar end-->
+      <div>
+        <img src="assest/img/hairoilnewbanner.png" class="img-fluid" alt="...">
+      </div>
+    <div class="container2">
+        <script>
+            // cards.forEach(card => {   
+            // });
+            cards.forEach(function(card)
+            {
+                document.write(`  
+          <div class="card" style="width: 18rem;">
+  <img src="${card.img}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${card.title}</h5>
+    <h5>Price : ${card.price}</h5>
+    <a href="hair oildetails.html?id=${card.id}" class="btn btn-primary">Read More</a>
+  </div>
+</div> 
+                `)
+            });
+        </script>   
+    </div>
+   
+      <br>
+      <!---start Q/A-->
+      <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        What is hair Shampo used for?
+  
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        So, what is hair shamo? Hair Shampo, also known as styling cream, <strong>adds a subtle, natural-looking shine to hair</strong>It gives a low to medium hold that tames stray hairs, but doesn't weigh your 'do' down. Simply put, it banishes frizz without the greasiness.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Can I use hair shampo daily? 
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Yes it is safe for everyday use.</strong> Instead it gives nourishment to hairs and also helps in styling hairs according to the will. The cream is available in different varients too.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        What is the disadvantage of hair Shampo?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Hair creams add texture and shine to your hair and tame frizz. However, they.<strong>make your hair oily, greasy, and heavy, clogs pores, and cause dandruff or buildup.Hair creams add texture and shine to your hair and tame frizz. However, they make your hair oily, greasy, and heavy, clogs pores, and cause dandruff or buildup.</strong>
+      </div>
+    </div>
+  </div>
+</div>
+<!----end Q/A-->
+<hr>
+
+ 
+  <!---footer end-->
+  <div class="footer"></div>
+</body>
+</html>
+<script src="assest/js/script.js"></script>

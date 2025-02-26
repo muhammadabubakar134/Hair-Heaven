@@ -1,0 +1,27 @@
+
+#galleryA{
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+color: black;
+}
+#hover-image{
+    position: relative;
+    overflow: hidden;
+    border: 5px solid transparent; /* Initial border */
+    transition: border-color 0.3s ease; /* Smooth transition for border */
+}
+#hover-image:hover {
+    border-color: #575757; /* Change border color on hover */
+}
+#footer{
+    background-color: rgb(221, 221, 221);
+   }
+   #footer a{
+    text-decoration: none;
+   }
+   #footerlogo{
+    height: 12vh;
+    width: 35vh;
+   }
